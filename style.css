@@ -16,40 +16,35 @@ body {
     text-align: center;
 }
 
-/* ロゴ */
+/* ロゴ（サイズ少し小さく） */
 .logo {
-    width: 260px;
-    max-width: 70vw;
+    width: 220px;       /* ←以前より小さめ */
+    max-width: 60vw;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;   /* ←ロゴとアイコンの間隔20px */
 }
 
-/* Instagram リンク */
-.insta-link {
-    text-decoration: none;
-}
-
-/* SVG アイコン */
-.insta-icon {
-    width: 40px;
-    height: 40px;
-    fill: #c9c8bd;
+/* Instagram アイコン（PNG版） */
+.insta-icon-img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.9;
     transition: opacity 0.2s ease;
 }
 
-.insta-icon:hover {
+.insta-icon-img:hover {
     opacity: 0.6;
 }
 
 /* スマホ最適化 */
 @media (max-width: 480px) {
     .logo {
-        width: 200px;
-        margin-bottom: 30px;
+        width: 180px;
+        margin-bottom: 20px;
     }
 
-    .insta-icon {
-        width: 34px;
-        height: 34px;
+    .insta-icon-img {
+        width: 28px;
+        height: 28px;
     }
 }
