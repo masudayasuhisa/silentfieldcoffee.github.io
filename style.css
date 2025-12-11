@@ -12,8 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: hidden; /* 変なスクロール防止 */
+    overflow: hidden;
 }
 
 /* =============================
@@ -30,32 +29,30 @@ body {
    Logo
    ============================= */
 .logo {
-    width: 220px;        /* 一回り小さく */
+    width: 220px;             /* ロゴサイズ */
     max-width: 60vw;
     height: auto;
-    margin-bottom: 20px; /* ロゴとアイコンの距離20px */
+    margin-bottom: 40px;      /* ← ロゴとの間隔 40px */
 }
 
 /* =============================
-   Instagram icon (PNG version)
+   Instagram icon (PNG)
    ============================= */
 .insta-link {
     text-decoration: none;
 }
 
 .insta-icon-img {
-    width: 40px !important;     /* 強制縮小して暴走防止 */
-    height: 40px !important;
+    width: 26px !important;   /* ← さらに小さく！ */
+    height: 26px !important;
     object-fit: contain;
-    display: block;
-    margin: 0 auto;
 
-    opacity: 0.9;
+    opacity: 0.85;
     transition: opacity 0.2s ease;
 }
 
 .insta-icon-img:hover {
-    opacity: 0.6;
+    opacity: 0.55;
 }
 
 /* =============================
@@ -64,12 +61,12 @@ body {
 @media (max-width: 480px) {
 
     .logo {
-        width: 180px;
-        margin-bottom: 20px;
+        width: 170px;
+        margin-bottom: 40px;
     }
 
     .insta-icon-img {
-        width: 34px !important;
-        height: 34px !important;
+        width: 22px !important;
+        height: 22px !important;
     }
 }
