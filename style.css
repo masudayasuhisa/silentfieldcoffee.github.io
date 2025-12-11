@@ -1,0 +1,55 @@
+/* 全体設定 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #232120;
+    color: #c9c8bd;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* レイアウト中央寄せ */
+.wrapper {
+    text-align: center;
+}
+
+/* ロゴ */
+.logo {
+    width: 260px;
+    max-width: 70vw;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Instagram リンク */
+.insta-link {
+    text-decoration: none;
+}
+
+/* SVG アイコン */
+.insta-icon {
+    width: 40px;
+    height: 40px;
+    fill: #c9c8bd;
+    transition: opacity 0.2s ease;
+}
+
+.insta-icon:hover {
+    opacity: 0.6;
+}
+
+/* スマホ最適化 */
+@media (max-width: 480px) {
+    .logo {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .insta-icon {
+        width: 34px;
+        height: 34px;
+    }
+}
