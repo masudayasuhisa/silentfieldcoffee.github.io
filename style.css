@@ -1,4 +1,6 @@
-/* 全体設定 */
+/* =============================
+   Global settings
+   ============================= */
 body {
     margin: 0;
     padding: 0;
@@ -6,28 +8,48 @@ body {
     color: #c9c8bd;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
     height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden; /* 変なスクロール防止 */
 }
 
-/* レイアウト中央寄せ */
+/* =============================
+   Layout wrapper
+   ============================= */
 .wrapper {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* ロゴ（サイズ少し小さく） */
+/* =============================
+   Logo
+   ============================= */
 .logo {
-    width: 220px;       /* ←以前より小さめ */
+    width: 220px;        /* 一回り小さく */
     max-width: 60vw;
     height: auto;
-    margin-bottom: 20px;   /* ←ロゴとアイコンの間隔20px */
+    margin-bottom: 20px; /* ロゴとアイコンの距離20px */
 }
 
-/* Instagram アイコン（PNG版） */
+/* =============================
+   Instagram icon (PNG version)
+   ============================= */
+.insta-link {
+    text-decoration: none;
+}
+
 .insta-icon-img {
-    width: 32px;
-    height: 32px;
+    width: 40px !important;     /* 強制縮小して暴走防止 */
+    height: 40px !important;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+
     opacity: 0.9;
     transition: opacity 0.2s ease;
 }
@@ -36,15 +58,18 @@ body {
     opacity: 0.6;
 }
 
-/* スマホ最適化 */
+/* =============================
+   Responsive adjustments
+   ============================= */
 @media (max-width: 480px) {
+
     .logo {
         width: 180px;
         margin-bottom: 20px;
     }
 
     .insta-icon-img {
-        width: 28px;
-        height: 28px;
+        width: 34px !important;
+        height: 34px !important;
     }
 }
